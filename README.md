@@ -12,17 +12,21 @@ Este proyecto es una simulación interactiva desarrollada en **Python** y **Stre
     *   [x] Configuración inicial del repositorio en GitHub y ramas de trabajo.
     *   [x] Creación de la interfaz web base con `Streamlit` y estilos en `estilos.css`.
     *   [x] Diseño de la matriz/cuadrícula del edificio (5x5) con muros y víctimas.
-    *   [x] Implementación del nacimiento del Sistema Multi-Agente (Robot Alfa y Robot Beta) en el mapa (**U1.7**).
-*   **Integrante 2 (Experto en Navegación):**
-    *   [ ] Crear el archivo `navegacion.py`.
-    *   [ ] Implementar el Algoritmo $A^*$ utilizando la **distancia Manhattan** como heurística (**U1.8.2, U1.8.3**).
-    *   [ ] Conectar la ruta óptima calculada con el tablero visual de la Integrante 1.
-*   **Integrantes 3, 4 y 5 (Redactores de la Memoria Escrita):**
-    *   [ ] Redactar el Marco Histórico de la IA y robótica de rescate (**U1.2**).
-    *   [ ] Relacionar las Teorías del Aprendizaje y el Modelo Cognoscitivo con la arquitectura Percepción-Estado-Acción de los robots (**U1.3, U1.6**).
-    *   [ ] Desarrollar el Modelo de Adquisición del Conocimiento (**U1.5**).
+    *   [x] Implementación del nacimiento del Sistema Multi-Agente (Robot Alfa y Robot Beta) en el mapa 
+    **  [x] Implementación del ciclo Percepción-Estado-Acción dinámico mediante la memoria de la página (`st.session_state`).
+    *   [x] Panel de control del operador con sistema de alertas críticas en la barra lateral (letras rojas en mayúsculas) y botón de reinicio automático. 
+  
+    **Módulo de Navegación y Búsqueda Heurística (U1.8.2, U1.8.3):**
+    *   [x] Creación del módulo independiente `navegacion.py`.
+    *   [x] Implementación real del **Algoritmo A*** utilizando estructuras de prioridad (`heapq`) para calcular la ruta óptima en el espacio de estados.
+    *   [x] Programación de la **distancia Manhattan** como función heurística aplicada de forma independiente para ambos robots.
+    *   [x] Lógica de evasión de obstáculos en tiempo real (los robots recalculan la ruta automáticamente para rodear los muros con valor 1).
 
----
+*   **Memoria Escrita (U1.2, U1.3, U1.5, U1.6):**
+    *   [x] Redacción del Marco Histórico de la IA aplicada a la robótica de rescate.
+    *   [x] Justificación de las Teorías del Aprendizaje y el Modelo Cognoscitivo del agente racional.
+    *   [x] Desarrollo del Modelo de Adquisición del Conocimiento (Análisis epistemológico: Empirismo vs Racionalismo).
+
 
 ### 🛠️ Instrucciones para el Equipo (Cómo correr el proyecto)
 
